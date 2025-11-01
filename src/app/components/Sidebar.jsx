@@ -21,6 +21,8 @@ const Sidebar = () => {
 
   // Close sidebar on mobile when clicking outside
   useEffect(() => {
+    if (!setIsOpen) return;
+    
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setIsOpen(false);
@@ -28,7 +30,7 @@ const Sidebar = () => {
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [setIsOpen]);
 
   const contactInfo = [
     {
