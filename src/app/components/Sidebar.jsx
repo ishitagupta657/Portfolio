@@ -93,7 +93,7 @@ const Sidebar = () => {
           <div className="relative w-32 h-32 mx-auto mb-6">
             <div className="relative w-full h-full aspect-square overflow-hidden rounded-full">
               <Image
-                src="/WhatsApp Image 2025-07-24 at 9.43.40 PM.jpeg"
+                src="/images/projects/profile.jpeg"
                 alt="My Photo"
                 fill
                 sizes="128px"
